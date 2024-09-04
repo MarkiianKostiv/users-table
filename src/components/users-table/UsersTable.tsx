@@ -24,7 +24,7 @@ export const UsersTable = () => {
   };
 
   return (
-    <div className='overflow-x-auto mt-5'>
+    <div className='overflow-x-auto mt-4 pb-4'>
       <table className='table'>
         <thead>
           <tr>
