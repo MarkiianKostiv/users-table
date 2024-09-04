@@ -86,10 +86,12 @@ export const UsersTable = () => {
           </tr>
         </thead>
         <tbody>
-          {status === "loading" &&
-            Array.from({ length: 10 }).map((_, index) => (
-              <TableRowPlaceHolder key={index} />
-            ))}
+          {status === "loading" && (
+            <TableRowPlaceHolder
+              rows={10}
+              columns={5}
+            />
+          )}
 
           {status === "succeeded" && filteredUsers.length === 0 && (
             <TableRowEmpty colSpan={5} />
